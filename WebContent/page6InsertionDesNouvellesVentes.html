@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/AjouterArticle.css" />
+    <meta charset="ISO-8859-1">
+    <!-- Page 6 insertion des nouvelles ventes -->
+    <title>Nouvelle Vente</title>
+</head>
+
+<body>
+    <!-- titre de l'association  -->
+    <h1>ENI-Enchères - Les objets sont nos amis</h1>
+    <!-- titre de de la page-->
+    <h2>Nouvelle vente</h2>
+    <div>
+
+     <img alt="L'image de l'article de la nouvelle vente" 
+					src="images.jpg" placeholder="uploader une image ">
+					 <!--  le formulaire de nouvelle vente -->
+        <form action="EnregistrerOuAnnulerLaVente">
+            <div id="label">
+                <label>Article :
+                    <input type="text" name="article" placeholder="Fauteuil..."></label>
+                <label>Description :
+                    <textarea rows="4" cols="40" placeholder="Fauteil en cuir..."></textarea></label>
+                <label>Catégorie
+
+                    <!-- Liste déroulante -->
+                    <select name="categorie">
+                        <option></option>
+                        <option>Informatique</option>
+                        <option>Ameublement</option>
+                        <option>Vêtement</option>
+                        <option>Sport&Loisirs</option>
+                    </select>
+                </label>
+                <label>Photo de l'article
+                    <input type="file" /></label>
+                <label>Mise à prix :
+                    <input type="number" placeholder="310"></label>
+                <label>Début de l'enchère :
+                    <input type="date" placeholder="10/08/2020"> </label>
+                <label>Fin de l'enchère :
+                    <input type="date" placeholder="01/09/2020"></label>
+                <!-- Retrait est une bordure pour toute la partie adresse
+Par défaut L'adresse est automatiquement celle du vendeur -->
+                <label class="retrait">Retrait :
+                    <label>Rue :
+                        <input type="text" name="rue"> </label>
+                    <label>Code postal :
+                        <input type="text" name="codepostal"> </label>
+                    <label>Ville :
+                        <input type="text" name="ville"> </label>
+                </label>
+                <div class="button">
+                    <button><a href="page4ListeEncheresMesVentes.html">Enregistrer</a></button>
+                    <button>Annuler</button>
+
+                    <!-- La vente peut etre annule seulement si   -->
+                    <button>Annuler La vente</button>
+                </div>
+                  </div>
+        </form>
+   
+    </div>
+
+</body>
+
+<footer>page 9 et 10 /13</footer>
+
+</html>

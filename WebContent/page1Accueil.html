@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="css/Accueil.css" />
+    
+<title>Les objets sont nos amis : Page d'accueil</title>
+
+</head>
+<body>
+<div id="seconnecter">
+	<p>ENI-Encheres</p>
+	<a href="/ServletConnexionMonCompte">s'inscrire - se connecter</a>
+</div>
+
+<h1 >Liste des enchères</h1>
+
+
+<!-- Premiere section : choix de la catégorie d'enchère, filtre sur les mots et recherche-->
+
+<section>
+<div class="recherche">
+<div>
+
+		<!--Champ de recherche par filtres-->
+
+		<label for="Filtres">Filtres</label>
+		<input type="text" name="filtres" id="filtres" placeholder="🔎  Le nom de l'article contient...">
+
+		<!--Liste deroulante des categories-->
+
+		<br><br>
+		<label for="Categorie">Catégorie</label>
+		<select>
+				<option>Toutes</option>
+				<option>Informatique</option>
+				<option>Ameublement</option>
+				<option>Vêtement</option>
+				<option>Sport&Loisirs</option>
+		</select>
+		</div>	<div>
+		
+<form action="">
+		<!--Bouton rechercher-->		
+		<button>
+			Rechercher
+		</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- 2eme section affichage de la liste des encheres en cours filtrées-->
+
+<section>
+
+<div id="encheres">
+
+	<div id="enchere1"> 
+		<div>	<img src="images/enchere1.jpg"alt="enchere1"/> </div>
+		<div>	<p>Enchere1</p> 		
+				<text>Description enchere 1</text>
+				<p>Prix <text>prix enchere 1</text></p>
+				<p>Fin de l'enchère <text>date fin de l'enchere 1</text></p>
+				<p>Vendeur <text>pseudo du vendeur 1</text></p>
+ 		</div>
+ 	</div>
+	<div id="enchere2">
+		<div>	<img src="images/enchere2.jpg"alt="enchere2"/> </div>
+		<div>	<p>Enchere2</p> 		
+				<text>Description enchere 2</text>
+				<p>Prix <text>prix enchere 2</text></p>
+				<p>Fin de l'enchère <text>date fin de l'enchere 2</text></p>
+				<p>Vendeur <text>pseudo du vendeur 2</text></p>
+ 		</div>
+	</div>
+
+	<div id="enchere3">
+		<div>	<img src="images/enchere3.jpg"alt="enchere3"/> </div>	
+		<div>	<p>Enchere3</p> 		
+				<text>Description enchere 3</text>
+				<p>Prix <text>prix enchere 3</text></p>
+				<p>Fin de l'enchère <text>date fin de l'enchere 3</text></p>
+				<p>Vendeur <text>pseudo du vendeur 3</text></p>
+ 		</div>
+	</div>
+</div>
+
+</section>
+</body>
+</html>

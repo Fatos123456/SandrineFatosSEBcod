@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+body
+{
+/*pour mettre le texte au milieu de la page  */	
+	text-align:center;
+}
+div
+{
+	display:flex;
+text-align:center;
+justify-content:center;
+
+}
+
+#label
+{
+	display:flex;
+flex-direction: column;
+text-align:left;
+}
+/*
+form
+{
+	 display:block;
+justify-content:space-around;
+color:red;
+}*/

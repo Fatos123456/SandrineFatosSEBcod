@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+body {
+    /*pour mettre le texte au milieu de la page  */
+    text-align: center;
+}
+
+div {
+    /*ceci permet de faire apparaitre 2 colonnes la photo et le formulaire avec les boutons*/
+    display: flex;
+    justify-content: center;
+
+}
+ img {
+ 	width:300px;
+ 	height:250px;
+ }
+#label, .paragraphes {
+    /* celui ci permet de mettre la partie de formulaire en colonne d'aligner le texte à gauche et d'aerer le formulaire*/
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+    padding-left:25px;
+}
+
+.retrait {
+    /*.retrait permet de mettre une marge en hat de 10PX de les disposer en colonne, de afficher le texte à gauche, de ajouter une bordure et de aerer le texte avec padding*/
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: solid black 2px;
+    padding: 10px 10px 10px 10px;
+}
+
+label {
+    /*aerer le formulaire*/
+    margin-top: 15px;
+}
+
+
+.button {
+    /* ranger les boutons et laisser de l'espace entre les boutons*/
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+footer {
+    /*permet au footer d'e prendre de l'espace entre les boutons et la fin de la page */
+    margin-top: 50px;
+}
