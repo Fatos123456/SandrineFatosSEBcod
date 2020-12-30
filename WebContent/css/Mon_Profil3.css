@@ -1,10 +1,10 @@
-@charset "ISO-8859-1";
 body
 {
-	color:red;
+	color:blue;
     text-align: center;
     margin-top: 10%;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p
@@ -15,7 +15,8 @@ p
 
 input
 {
-    margin-top: 8%;
+    margin-top: 10%;
+    margin-left: 45%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;

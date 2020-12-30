@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/Accueil.css" />
+<link rel="stylesheet" type="text/css" href="css/accueil.css" />
 
 <title>Les objets sont nos amis : Page d'accueil</title>
 

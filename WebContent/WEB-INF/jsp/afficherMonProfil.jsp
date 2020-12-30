@@ -9,10 +9,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/Mon_Profil.css" />
+<link rel="stylesheet" type="text/css" href="css/Mon_Profil3.css" />
 <title>${utilisateur.pseudo }</title>
 </head>
 <body>
+<p>coucouc</p>
 	<%
 		List<Utilisateur> utilisateurs = (List<Utilisateur>) request.getAttribute("utilisateurs");
 	if (utilisateurs != null && utilisateurs.size() > 0) {

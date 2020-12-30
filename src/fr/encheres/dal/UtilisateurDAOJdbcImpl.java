@@ -98,7 +98,7 @@ public class UtilisateurDAOJdbcImpl implements UtilisateurDAO {
 
 
 	// on crée la requete de modification de l'utilisateur
-		private static final String MODIFIER_UTILISATEUR = "UPDATE UTILISATEURS SET pseudo=?, nom=?, prenom=?, email=?, telephone=?, rue=?, code_postal=?, ville=?, mot_de_passe=?, administrateur=? WHERE no_utilisateur=4";
+		private static final String MODIFIER_UTILISATEUR = "UPDATE UTILISATEURS SET mot_de_passe=? WHERE no_utilisateur=4";
 
 		public void modifier(Utilisateur utilisateur) {
 
@@ -107,16 +107,9 @@ public class UtilisateurDAOJdbcImpl implements UtilisateurDAO {
 
 					PreparedStatement pstmt = cnx.prepareStatement(MODIFIER_UTILISATEUR,
 							PreparedStatement.RETURN_GENERATED_KEYS);
-					pstmt.setString(1, utilisateur.getPseudo());
-					pstmt.setString(2, utilisateur.getNom());
-					pstmt.setString(3, utilisateur.getPrenom());
-					pstmt.setString(4, utilisateur.getEmail());
-					pstmt.setString(5, utilisateur.getTelephone());
-					pstmt.setString(6, utilisateur.getRue());
-					pstmt.setString(7, utilisateur.getCodePostal());
-					pstmt.setString(8, utilisateur.getVille());
-					pstmt.setString(9, utilisateur.getMotDePasse());
-					pstmt.setInt(10, utilisateur.getAdministrateur());
+				
+					pstmt.setString(1, utilisateur.getMotDePasse());
+				
 	//pstmt.setInt(11, utilisateur.getId() );
 
 					pstmt.executeUpdate();

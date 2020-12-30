@@ -1,7 +1,7 @@
 <%@page import="fr.encheres.bo.Enchere"%>
 <%@page import="java.util.List"%>
 
- 
+ <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/Accueil.css" />
+<link rel="stylesheet" type="text/css" href="css/accueil.css" />
     
 <title>Les objets sont nos amis : Page d'accueil</title>
 
@@ -69,7 +69,7 @@
         </div>    <div>
 
  
-
+<!-- 
 <%-- <% --%>
 <!--  String filtres=null;
 //                 if (request.getParameter("filtres") !=null)
@@ -77,7 +77,7 @@
 //                     filtres=request.getParameter("filtres");
 //                 }
 <%-- %> --%>
-
+-->
  
 
         

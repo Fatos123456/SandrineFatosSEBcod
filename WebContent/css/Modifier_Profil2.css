@@ -1,20 +1,32 @@
 body
 {
     text-align: center;
+    color:purple;
 }
 
 h1
 {
     margin-bottom: 5%;
 }
-#infos_compte
+.infos_compte2
+{
+    display: flex;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.infos_12
+{
+    margin-right: 25%;
+}
+.infos_compte
 {
     display: flex;
     margin-left: 30%;
     text-align: left;
 }
 
-#infos_1
+.infos_1
 {
     margin-right: 10%;
 }
